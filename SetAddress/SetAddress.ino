@@ -40,7 +40,11 @@ void setup() {
   // uint8_t finalAddress = 0x01;
   // uint8_t finalAddress = 0x02;
   // uint8_t finalAddress = 0x03;
-  uint8_t finalAddress = 0x04;
+  // uint8_t finalAddress = 0x04;
+  // uint8_t finalAddress = 0x05;
+  uint8_t finalAddress = 0x06;
+    
+
 
   if (pzem.setDeviceAddress(finalAddress)) {
     Serial.printf("Address set to 0x%02X\n", pzem.getDeviceAddress());

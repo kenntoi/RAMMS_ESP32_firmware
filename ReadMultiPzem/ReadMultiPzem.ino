@@ -1,12 +1,15 @@
 #include <Arduino.h>
 #include <PZEM004Tv30.h>
 
-#define NUM_PZEMS 3
+#define NUM_PZEMS 6
 
 PZEM004Tv30 pzems[] = {
+    PZEM004Tv30(Serial1, 14, 27, 0x01),
     PZEM004Tv30(Serial1, 14, 27, 0x02),
     PZEM004Tv30(Serial1, 14, 27, 0x03),
-    PZEM004Tv30(Serial2, 16, 17, 0x04)  // pzem4 on Serial2
+    PZEM004Tv30(Serial2, 16, 17, 0x04),
+    PZEM004Tv30(Serial2, 16, 17, 0x05),
+    PZEM004Tv30(Serial2, 16, 17, 0x06)   
 };
 
 String names[] = {"PZEM2", "PZEM3", "PZEM4"};
