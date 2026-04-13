@@ -12,7 +12,7 @@ PZEM004Tv30 pzems[] = {
     PZEM004Tv30(Serial2, 16, 17, 0x06)   
 };
 
-String names[] = {"PZEM2", "PZEM3", "PZEM4"};
+String names[] = {"PZEM1", "PZEM2", "PZEM3", "PZEM4", "PZEM5", "PZEM6"};
 
 void setup() {
     Serial.begin(115200);
